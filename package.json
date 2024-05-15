@@ -10,9 +10,12 @@
     "test": "ng test",
     "electron:build": "electron-builder",
     "electron": "ng build && electron .",
-    "win32": "electron-packager . --platform=win32 --arch=x64 --out=dist --overwrite",
-    "mac": "electron-packager . --platform=darwin --arch=x64 --out=dist --overwrite",
-    "linux": "electron-packager . --platform=linux --arch=x64 --out=dist --overwrite"
+    "win32arch64": "electron-packager . --platform=win32 --arch=x64 --out=dist --overwrite",
+    "win32": "electron-packager . --platform=win32 --overwrite",
+    "mac32arch64": "electron-packager . --platform=darwin --arch=x64 --out=dist --overwrite",
+    "mac": "electron-packager . --platform=darwin  --overwrite",
+    "linux32arch64": "electron-packager . --platform=linux --arch=x64 --out=dist --overwrite",
+    "linux": "electron-packager . --platform=linux --overwrite"
   },
   "private": true,
   "dependencies": {
